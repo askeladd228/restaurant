@@ -1,0 +1,82 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+#content {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  display: grid;
+  height: 100%;
+}
+
+.heading {
+  grid-column: 1;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  align-items: center;
+}
+
+.middle {
+  grid-column: 1;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  justify-content: center;
+}
+
+.footer {
+  grid-column: 1;
+  grid-row: 3/4;
+  display: flex;
+  background-color: red;
+}
+
+.foodHolder {
+  display: flex;
+  gap: 100px;
+}
+
+/* .foodHolder > div {
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-left: 5px solid orange;
+} */
+
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  width: 300px;
+  font-size: 24px;
+}
+
+.buttonHolder > div:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.buttonHolder > div {
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
