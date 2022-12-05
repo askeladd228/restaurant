@@ -1,4 +1,5 @@
 import './style.css'
+import changeTabAbout from './tabAbout.js'
 
 const content = document.querySelector("#content");
 const heading = document.createElement('div');
@@ -25,6 +26,7 @@ const sate = document.createElement('div');
 const foodHolder = document.createElement('div');
 const randomText = document.createElement('div');
 const randomTextTwo = document.createElement('div');
+middle.classList.add('middle');
 
 nasiImg.src = '../dist/nasi-goreng.jpg';
 rendangImg.src = '../dist/rendang.jpg';
@@ -82,10 +84,10 @@ rendangImg.classList.add('img');
 sateImg.classList.add('img');
 buttonHolder.classList.add('buttonHolder');
 
-function changeTabAbout () {
-  middle.replaceChildren();
-  middle.appendChild(randomText);
-}
+// function changeTabAbout () {
+//   middle.replaceChildren();
+//   middle.appendChild(randomText);
+// }
 
 function changeTabHome () {
   middle.replaceChildren();
@@ -101,3 +103,6 @@ function changeTabContact () {
 buttonAbout.addEventListener('click', changeTabAbout);
 buttonHome.addEventListener('click', changeTabHome);
 buttonContact.addEventListener('click', changeTabContact);
+
+console.log(changeTabAbout);
+console.log(changeTabHome);
